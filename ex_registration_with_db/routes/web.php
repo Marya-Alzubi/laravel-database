@@ -13,13 +13,21 @@
 
 
 
-// registration [20-dec-2020]
+//// registration [20-dec-2020]
 Route::get('/', function(){
     return view("welcome");
 });
-Route::get('/registration', function(){
-    return view("/registration");
-});
 
-Route::post("/input_table","userController@register");
+
+
+
+
+
+
+
+
+
+
+// edwin udemy [21-dec-2020]
+Route::resource("/users", "user2Controller");
 

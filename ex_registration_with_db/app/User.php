@@ -8,6 +8,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
+    protected $primaryKey = "userid";
     use Notifiable;
 
     /**
@@ -16,7 +17,10 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'email',
+        'password',
+        'mobile',
+        'fname'
     ];
 
     /**
@@ -36,12 +40,6 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-        'mobile',
-        'fname'
-    ];
+
 
 }

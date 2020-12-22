@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 21, 2020 at 11:10 AM
+-- Generation Time: Dec 22, 2020 at 01:43 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.2.34
 
@@ -70,6 +70,14 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`userid`, `email`, `password`, `mobile`, `fname`, `created_at`, `updated_at`) VALUES
+(6, 'marie.96sept@gmail.com', 'dcvsdv', 11111, '111', '2020-12-21 11:33:22', '2020-12-21 11:33:22'),
+(10, 'update3@gmail.com', 'tjytjyu', 11111, '11111', '2020-12-21 17:56:42', '2020-12-21 21:26:05');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -106,7 +114,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `userid` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `userid` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
